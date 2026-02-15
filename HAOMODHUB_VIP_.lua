@@ -22,8 +22,8 @@ else
         Text = "Script chỉ hoạt động trong Blox Fruits!";
         Duration = 5;
     })
-    wait(3)
-    error("Không phải game Blox Fruits!")
+end)
+    return 
 end
 function MaterialMon()
     if _G.SelectMaterial ~= "Radiactive Material" then
