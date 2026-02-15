@@ -1,4 +1,4 @@
--- This file was deobfuscated using Scene Deobfuscator discord.gg/deobfuscate :D
+-- Owner Hào Mod | th nào crack dc source bố nhớ cre bố Hào Mod 
 
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death), function()
     -- empty block
@@ -6,30 +6,25 @@ end)
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respawn), function()
     -- empty block
 end)
--- Wait game load
-repeat task.wait() until game:IsLoaded()
-repeat task.wait() until game:GetService("Players").LocalPlayer
-task.wait(2)
-
--- Detect Sea (an toàn)
-local SeaTable = {
-    [2753915549] = 1,
-    [4442272183] = 2,
-    [7449423635] = 3
-}
-
-local Sea = SeaTable[game.PlaceId]
-if not Sea then
-    warn("Not Blox Fruits -> stop hub")
-    return
-end
-
-_G.Sea = Sea
-World1 = Sea == 1
-World2 = Sea == 2
-World3 = Sea == 3
-
-print("🌊 Sea "..Sea.." detected")
+-- Kiểm tra game Blox Fruits
+if game.PlaceId == 2753915549 then
+    World1 = true
+    print("🌊 Sea 1 - First Sea")
+elseif game.PlaceId == 4442272183 then
+    World2 = true
+    print("🌊 Sea 2 - Second Sea")
+elseif game.PlaceId == 7449423635 then
+    World3 = true
+    print("🌊 Sea 3 - Third Sea")
+else
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "❌ Lỗi!";
+        Text = "Script chỉ hoạt động trong Blox Fruits!";
+        Duration = 5;
+    })
+    wait(3)
+    error("Không phải game Blox Fruits thằng lồn à!")
+end 
 function MaterialMon()
     if _G.SelectMaterial ~= "Radiactive Material" then
         if _G.SelectMaterial ~= "Leather + Scrap Metal" then
