@@ -3875,8 +3875,12 @@ game:GetService("UserInputService").InputChanged:Connect(function(v483)
         v480(v483)
     end
 end)
-l_ImageButton_0.MouseButton1Click:Connect(function()
+l_ImageButton_0.Activated:Connect(function()
+    if clickCooldown then return end
+    clickCooldown = true
+
     v473 = not v473
+
     if v473 then
         v466:Minimize(false)
         l_ImageButton_0.Text = "CLOSE"
@@ -3884,6 +3888,9 @@ l_ImageButton_0.MouseButton1Click:Connect(function()
         v466:Minimize(true)
         l_ImageButton_0.Text = "OPEN"
     end
+
+    task.wait(0.15)
+    clickCooldown = false
 end)
 local v485 = v466:MakeTab({"Farming""})
 local v486 = v466:MakeTab({"Auto Fishing"})
