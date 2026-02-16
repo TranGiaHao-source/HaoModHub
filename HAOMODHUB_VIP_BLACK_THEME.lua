@@ -3698,15 +3698,14 @@ for i, url in ipairs(ui_urls) do
             SubTitle = "⚡ by HaoMod ⚡",
             SaveFolder = "Redz | redz lib v5.lua",
             Theme = {
-                Accent = Color3.fromRGB(30, 144, 255),
-                Background = Color3.fromRGB(0, 0, 0),
-                SecondaryBackground = Color3.fromRGB(10, 10, 10),
-                Text = Color3.fromRGB(255, 255, 255),
-                PlaceholderText = Color3.fromRGB(120, 120, 140),
-                ButtonText = Color3.fromRGB(255, 255, 255),
-                Shadow = Color3.fromRGB(0, 0, 0)
-            }
-        })
+    Accent = Color3.fromRGB(0, 170, 255), -- xanh sáng
+    Background = Color3.fromRGB(18,18,18), -- nền đen
+    SecondaryBackground = Color3.fromRGB(25,25,25), -- panel
+    Text = Color3.fromRGB(255,255,255),
+    PlaceholderText = Color3.fromRGB(150,150,150),
+    ButtonText = Color3.fromRGB(255,255,255),
+    Shadow = Color3.fromRGB(0,0,0)
+                }
         ui_loaded = true
         print("✅ UI loaded from URL " .. i)
         break
