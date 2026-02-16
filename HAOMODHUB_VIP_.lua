@@ -3892,6 +3892,9 @@ l_ImageButton_0.Activated:Connect(function()
     task.wait(0.15)
     clickCooldown = false
 end)
+
+v466:Minimize(false)
+
 local v485 = v466:MakeTab({"Farming""})
 local v486 = v466:MakeTab({"Auto Fishing"})
 local v487 = v466:MakeTab({"Quest | Items"})
