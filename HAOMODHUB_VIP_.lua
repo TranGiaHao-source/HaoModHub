@@ -3908,8 +3908,17 @@ local v494 = v466:MakeTab({"PvP,Player"})
 local v495 = v466:MakeTab({"Shop"})
 local v496 = v466:MakeTab({"Settings"})
 
-    task.wait()
-v466:Minimize(false)
+    task.wait(0.2)
+
+pcall(function()
+    for _,v in pairs(game.CoreGui:GetDescendants()) do
+        if v:IsA("Frame") and v.Name:lower():find("main") then
+            v.Visible = true
+            v.BackgroundTransparency = 0
+            v.Position = UDim2.new(0.5,-300,0.5,-200)
+        end
+    end
+end)
     
 local _ = v485:AddSection({"Select Melee,Sword,Gun,Fruit"})
 _G.SelectWeapon = "Melee"
