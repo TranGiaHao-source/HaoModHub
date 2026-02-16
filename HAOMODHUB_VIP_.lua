@@ -7,13 +7,13 @@ hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respa
     -- empty block
 end)
 -- Kiểm tra game Blox Fruits
-if game.PlaceId == 2753915549 then
+if game.PlaceId == 85211729168715 then
     World1 = true
     print("🌊 Sea 1 - First Sea")
-elseif game.PlaceId == 4442272183 then
+elseif game.PlaceId == 79091703265657 then
     World2 = true
     print("🌊 Sea 2 - Second Sea")
-elseif game.PlaceId == 7449423635 then
+elseif game.PlaceId == 100117331123089 then
     World3 = true
     print("🌊 Sea 3 - Third Sea")
 else
@@ -23,7 +23,7 @@ else
         Duration = 5;
     })
     wait(3)
-    error("Không phải game Blox Fruits thằng lồn à!")
+    error("Không phải game Blox Fruits!")
 end 
 function MaterialMon()
     if _G.SelectMaterial ~= "Radiactive Material" then
