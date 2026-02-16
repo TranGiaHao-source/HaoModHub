@@ -3907,6 +3907,10 @@ local v493 = v466:MakeTab({"Teleport"})
 local v494 = v466:MakeTab({"PvP,Player"})
 local v495 = v466:MakeTab({"Shop"})
 local v496 = v466:MakeTab({"Settings"})
+
+    task.wait()
+v466:Minimize(false)
+    
 local _ = v485:AddSection({"Select Melee,Sword,Gun,Fruit"})
 _G.SelectWeapon = "Melee"
 task.spawn(function()
