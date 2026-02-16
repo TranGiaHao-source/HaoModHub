@@ -1,13 +1,3 @@
---// COLOR THEME (added)
-local Theme = {
-    Background = Color3.fromRGB(18,18,18),
-    Background2 = Color3.fromRGB(25,25,25),
-    Button = Color3.fromRGB(0,120,255),
-    ButtonOn = Color3.fromRGB(0,80,200),
-    Text = Color3.fromRGB(255,255,255),
-    Accent = Color3.fromRGB(0,170,255)
-}
-
 -- Owner Hào Mod | th nào crack dc source bố nhớ cre bố Hào Mod 
 
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death), function()
