@@ -3694,8 +3694,8 @@ for i, url in ipairs(ui_urls) do
     
     if success and result then
         v466 = result:MakeWindow({
-            Title = "HAO MOD HUB",
-            SubTitle = "by HaoMod",
+            Title = "꧁⚡HAO MOD HUB⚡꧂",
+            SubTitle = "by 【👑HaoMod👑】",
             SaveFolder = "Redz | redz lib v5.lua",
             Theme = {
                 Accent = Color3.fromRGB(0, 191, 255),
