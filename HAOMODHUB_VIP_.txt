@@ -1,5 +1,12 @@
 -- Owner Hào Mod | th nào crack dc source bố nhớ cre bố Hào Mod 
 
+hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death), function()
+    -- empty block
+end)
+hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respawn), function()
+    -- empty block
+end)
+
 function MaterialMon()
     if _G.SelectMaterial ~= "Radiactive Material" then
         if _G.SelectMaterial ~= "Leather + Scrap Metal" then
