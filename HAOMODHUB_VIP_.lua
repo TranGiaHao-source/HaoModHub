@@ -7,16 +7,7 @@ hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respa
     -- empty block
 end)
 -- Kiểm tra game Blox Fruits
-if game.PlaceId == 2753915549 then
-    World1 = true
-    print("🌊 Sea 1 - First Sea")
-elseif game.PlaceId == 4442272183 then
-    World2 = true
-    print("🌊 Sea 2 - Second Sea")
-elseif game.PlaceId == 7449423635 then
-    World3 = true
-    print("🌊 Sea 3 - Third Sea")
-else
+elseif game.PlaceId == 4520749081 or  game.PlaceId == 6381829480 or game.PlaceId == 15759515082 or game.PlaceId == 5931540094 then 
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "❌ Lỗi!";
         Text = "Script chỉ hoạt động trong Blox Fruits!";
