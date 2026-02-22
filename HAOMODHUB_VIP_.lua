@@ -8,6 +8,8 @@ hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respa
 end)
 -- Kiểm tra game Blox Fruits
 elseif game.PlaceId == 4520749081 or  game.PlaceId == 6381829480 or game.PlaceId == 15759515082 or game.PlaceId == 5931540094 then 
+local start = tick()
+    repeat task.wait() until game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("DataLoaded") and game.Players.LocalPlayer:FindFirstChild("DataLoaded").Value
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "❌ Lỗi!";
         Text = "Script chỉ hoạt động trong Blox Fruits!";
