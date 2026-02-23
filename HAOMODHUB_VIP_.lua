@@ -3892,51 +3892,6 @@ local v493 = v466:MakeTab({"Teleport","rbxassetid://116828114235759"})
 local v494 = v466:MakeTab({"PvP,Player","rbxassetid://116828114235759"})
 local v495 = v466:MakeTab({"Shop","rbxassetid://116828114235759"})
 local v496 = v466:MakeTab({"Settings","rbxassetid://116828114235759"})
-local DiscordBtn = CreateButton("Discord", "rbxassetid://11395238412")
-
-DiscordBtn.MouseButton1Click:Connect(function()
-
-    -- clear frame giống mấy tab khác
-    for _,v in pairs(MainFrame.PageContainer:GetChildren()) do
-        if v:IsA("Frame") then
-            v.Visible = false
-        end
-    end
-
-    -- tạo page info
-    local InfoPage = Instance.new("Frame")
-    InfoPage.Name = "DiscordPage"
-    InfoPage.Parent = MainFrame.PageContainer
-    InfoPage.Size = UDim2.new(1,0,1,0)
-    InfoPage.BackgroundTransparency = 1
-
-    local Text = Instance.new("TextLabel")
-    Text.Parent = InfoPage
-    Text.Size = UDim2.new(1,0,0,50)
-    Text.Position = UDim2.new(0,0,0.3,0)
-    Text.BackgroundTransparency = 1
-    Text.Text = "discord.gg/DKbu5RY67F"
-    Text.TextScaled = true
-    Text.Font = Enum.Font.GothamBold
-    Text.TextColor3 = Color3.fromRGB(255,255,255)
-
-    local Copy = Instance.new("TextButton")
-    Copy.Parent = InfoPage
-    Copy.Size = UDim2.new(0,200,0,40)
-    Copy.Position = UDim2.new(0.5,-100,0.6,0)
-    Copy.Text = "COPY LINK"
-    Copy.BackgroundColor3 = Color3.fromRGB(35,35,35)
-    Copy.TextColor3 = Color3.fromRGB(255,255,255)
-    Copy.Font = Enum.Font.GothamBold
-    Copy.TextScaled = true
-
-    Copy.MouseButton1Click:Connect(function()
-        if setclipboard then
-            setclipboard("https://discord.gg/DKbu5RY67F")
-        end
-    end)
-
-end)
 local _ = v485:AddSection({"Select Melee,Sword,Gun,Fruit"})
 _G.SelectWeapon = "Melee"
 task.spawn(function()
