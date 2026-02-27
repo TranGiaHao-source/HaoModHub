@@ -289,22 +289,22 @@ Tabs = {
 pcall(function()
     if Library.SetTheme then
         Library:SetTheme({
-            Background         = Color3.fromRGB(255, 182, 193),
-            Accent             = Color3.fromRGB(255, 20, 147),
+            Background         = Color3.fromRGB(173, 216, 230), -- xanh dương nhạt
+            Accent             = Color3.fromRGB(0, 191, 255),   -- xanh dương sáng
             PrimaryText        = Color3.fromRGB(255, 255, 255),
-            SecondaryText      = Color3.fromRGB(255, 220, 230),
-            Divider            = Color3.fromRGB(255, 105, 180),
-            Header             = Color3.fromRGB(220, 20, 90),
-            Box                = Color3.fromRGB(255, 145, 175),
-            Button             = Color3.fromRGB(255, 20, 147),
-            Hover              = Color3.fromRGB(255, 80, 160),
-            Toggle             = Color3.fromRGB(255, 20, 147),
-            ToggleBackground   = Color3.fromRGB(255, 182, 193),
-            Dropdown           = Color3.fromRGB(255, 145, 175),
-            DropdownBackground = Color3.fromRGB(255, 182, 193),
-            Scrollbar          = Color3.fromRGB(255, 20, 147),
-            Outline            = Color3.fromRGB(255, 105, 180),
-            Shadow             = Color3.fromRGB(180, 0, 80),
+            SecondaryText      = Color3.fromRGB(220, 240, 255),
+            Divider            = Color3.fromRGB(135, 206, 250),
+            Header             = Color3.fromRGB(70, 130, 180),
+            Box                = Color3.fromRGB(176, 224, 230),
+            Button             = Color3.fromRGB(0, 191, 255),
+            Hover              = Color3.fromRGB(30, 144, 255),
+            Toggle             = Color3.fromRGB(0, 191, 255),
+            ToggleBackground   = Color3.fromRGB(173, 216, 230),
+            Dropdown           = Color3.fromRGB(176, 224, 230),
+            DropdownBackground = Color3.fromRGB(173, 216, 230),
+            Scrollbar          = Color3.fromRGB(0, 191, 255),
+            Outline            = Color3.fromRGB(135, 206, 250),
+            Shadow             = Color3.fromRGB(25, 25, 112),
         })
     end
 
@@ -312,13 +312,13 @@ pcall(function()
         for k, v in pairs(Library.Theme) do
             if typeof(v) == "Color3" then
                 if k:lower():find("accent") or k:lower():find("primary") then
-                    Library.Theme[k] = Color3.fromRGB(255, 20, 147)
+                    Library.Theme[k] = Color3.fromRGB(0, 191, 255)
                 elseif k:lower():find("back") or k:lower():find("bg") then
-                    Library.Theme[k] = Color3.fromRGB(255, 182, 193)
+                    Library.Theme[k] = Color3.fromRGB(173, 216, 230)
                 elseif k:lower():find("text") then
                     Library.Theme[k] = Color3.fromRGB(255, 255, 255)
                 else
-                    Library.Theme[k] = Color3.fromRGB(255, 105, 180)
+                    Library.Theme[k] = Color3.fromRGB(135, 206, 250)
                 end
             end
         end
@@ -331,17 +331,17 @@ pcall(function()
                 for _, desc in pairs(gui:GetDescendants()) do
                     if desc:IsA("Frame") or desc:IsA("ScrollingFrame") then
                         if desc.BackgroundTransparency < 1 then
-                            desc.BackgroundColor3 = Color3.fromRGB(255, 182, 193)
+                            desc.BackgroundColor3 = Color3.fromRGB(173, 216, 230)
                         end
                     elseif desc:IsA("TextButton") then
-                        desc.BackgroundColor3 = Color3.fromRGB(255, 20, 147)
+                        desc.BackgroundColor3 = Color3.fromRGB(0, 191, 255)
                         desc.TextColor3 = Color3.fromRGB(255, 255, 255)
                     elseif desc:IsA("TextLabel") then
                         desc.TextColor3 = Color3.fromRGB(255, 255, 255)
                     elseif desc:IsA("ImageLabel") or desc:IsA("ImageButton") then
-                        desc.ImageColor3 = Color3.fromRGB(255, 105, 180)
+                        desc.ImageColor3 = Color3.fromRGB(135, 206, 250)
                     elseif desc:IsA("UIStroke") then
-                        desc.Color = Color3.fromRGB(255, 20, 147)
+                        desc.Color = Color3.fromRGB(0, 191, 255)
                     end
                 end
             end
