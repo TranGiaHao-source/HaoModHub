@@ -9859,5 +9859,4 @@ RunService.RenderStepped:Connect(function()
         lastUpdate = now
     end
 end)
-
--- End of script
+return
