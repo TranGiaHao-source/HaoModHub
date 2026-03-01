@@ -3682,7 +3682,9 @@ local ui_loaded = false
 
 -- Thử load UI từ nhiều nguồn khác nhau
 local ui_urls = {
-    "https://raw.githubusercontent.com/TranGiaHao-source/Test/refs/heads/main/ui_BananaHub_final.lua.txt"
+    "https://pastefy.app/JJynGTps/raw",
+    "https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib",
+    "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Unnamed",
 }
 
 for i, url in ipairs(ui_urls) do
