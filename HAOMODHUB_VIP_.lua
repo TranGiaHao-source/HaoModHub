@@ -3896,7 +3896,7 @@ local v496 = v466:MakeTab({"Settings","rbxassetid://116828114235759"})
 v484:AddDiscordInvite({
     Name = "Tham Gia Discord",
     Description = "Link Sever Discord",
-    Logo = "rbxassetid://100173004454294",
+    Logo = "rbxassetid://116828114235759",
     Invite = " https://discord.gg/DKbu5RY67F"
 })
 local _ = v485:AddSection({"Select Melee,Sword,Gun,Fruit"})
