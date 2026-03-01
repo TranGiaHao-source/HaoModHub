@@ -3880,6 +3880,7 @@ l_ImageButton_0.MouseButton1Click:Connect(function()
         v466:Minimize(true)
     end
 end)
+local v484 = v466:MakeTab({"Thông Tin | Info","rbxassetid://116828114235759"})
 local v485 = v466:MakeTab({"Farming","rbxassetid://116828114235759"})
 local v486 = v466:MakeTab({"Auto Fishing","rbxassetid://116828114235759"})
 local v487 = v466:MakeTab({"Quest | Items","rbxassetid://116828114235759"})
@@ -3892,6 +3893,12 @@ local v493 = v466:MakeTab({"Teleport","rbxassetid://116828114235759"})
 local v494 = v466:MakeTab({"PvP,Player","rbxassetid://116828114235759"})
 local v495 = v466:MakeTab({"Shop","rbxassetid://116828114235759"})
 local v496 = v466:MakeTab({"Settings","rbxassetid://116828114235759"})
+v484:AddDiscordInvite({
+    Name = "Tham Gia Discord",
+    Description = "Link Sever Discord",
+    Logo = "rbxassetid://100173004454294",
+    Invite = " https://discord.gg/DKbu5RY67F"
+})
 local _ = v485:AddSection({"Select Melee,Sword,Gun,Fruit"})
 _G.SelectWeapon = "Melee"
 task.spawn(function()
