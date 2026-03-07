@@ -3900,10 +3900,6 @@ v484:AddDiscordInvite({
     Logo = "rbxassetid://116777271888123",
     Invite = " https://discord.gg/DKbu5RY67F"
 })
-v484:AddParagraph({
-    Name = "Giao lưu vui vẻ",
-    Description = "Xem các update mới nhất từ server discord"
-})
 _G.SelectWeapon = "Melee"
 task.spawn(function()
     while task.wait() do
