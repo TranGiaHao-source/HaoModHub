@@ -3682,9 +3682,7 @@ local ui_loaded = false
 
 -- Thử load UI từ nhiều nguồn khác nhau
 local ui_urls = {
-    "https://raw.githubusercontent.com/TranGiaHao-source/HaoModHub/refs/heads/main/raw.txt",
-    "https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib",
-    "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Unnamed",
+    "https://raw.githubusercontent.com/TranGiaHao-source/HaoModHub/refs/heads/main/raw.txt"
 }
 
 for i, url in ipairs(ui_urls) do
