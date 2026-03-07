@@ -3731,7 +3731,7 @@ local vu32 = loadstring(game:HttpGet("https://pastefy.app/5bk02Q6b/raw"))();
 local v466 = vu32:MakeWindow({
     Title = "⚡HAO MOD HUB v1.0⚡",
     SubTitle = "【By 👑HaoMod👑】",
-    SaveFolder = "HaoModHub Vip | redz lib v5.lua"
+    SaveFolder = "NightSlayerOnTop | redz lib v5.lua"
 })
 
 v466:AddMinimizeButton({
@@ -3755,7 +3755,7 @@ local v496 = v466:MakeTab({"Misc", "settings"})
 
 v484:AddDiscordInvite({
     Name = "Hao Mod Hub | Comunity",
-    Description = "Vào Để Nhận Được Các Thông Báo Sớm Nhất Về Script Nhé!",
+    Description = "Vào Để Nhận Được Các Thông Báo Sớm Nhất Nhé!",
     Logo = "rbxassetid://116777271888123",
     Invite = "https://discord.gg/DKbu5RY67F"
 })
