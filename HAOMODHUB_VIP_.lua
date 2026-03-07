@@ -3829,7 +3829,7 @@ l_ScreenGui_0.Parent = game.CoreGui
 local l_ImageButton_0 = Instance.new("ImageButton")
 l_ImageButton_0.Size = UDim2.new(0, 50, 0, 50)
 l_ImageButton_0.Position = UDim2.new(0.15, 0, 0.15, 0)
-l_ImageButton_0.Image = "rbxassetid://116828114235759"
+l_ImageButton_0.Image = "rbxassetid://116777271888123"
 l_ImageButton_0.BackgroundColor3 = Color3.fromRGB(255, 200, 0)
 l_ImageButton_0.BorderSizePixel = 0
 l_ImageButton_0.Parent = l_ScreenGui_0
@@ -3880,23 +3880,23 @@ l_ImageButton_0.MouseButton1Click:Connect(function()
         v466:Minimize(true)
     end
 end)
-local v484 = v466:MakeTab({"Thông Tin | Info","rbxassetid://1000021211"})
-local v485 = v466:MakeTab({"Farming","rbxassetid://116828114235759"})
-local v486 = v466:MakeTab({"Auto Fishing","rbxassetid://116828114235759"})
-local v487 = v466:MakeTab({"Quest | Items","rbxassetid://116828114235759"})
-local v488 = v466:MakeTab({"Volcano Dojo","rbxassetid://116828114235759"})
-local v489 = v466:MakeTab({"Sea Event","rbxassetid://116828114235759"})
-local v490 = v466:MakeTab({"Race V4","rbxassetid://116828114235759"})
-local v491 = v466:MakeTab({"Raid Fruits","rbxassetid://116828114235759"})
-local v492 = v466:MakeTab({"Fruits | Check Stock","rbxassetid://116828114235759"})
-local v493 = v466:MakeTab({"Teleport","rbxassetid://116828114235759"})
-local v494 = v466:MakeTab({"PvP,Player","rbxassetid://116828114235759"})
-local v495 = v466:MakeTab({"Shop","rbxassetid://116828114235759"})
-local v496 = v466:MakeTab({"Settings","rbxassetid://116828114235759"})
+local v484 = v466:MakeTab({"Thông Tin | Info","rbxassetid://116777271888123"})
+local v485 = v466:MakeTab({"Farming","rbxassetid://116777271888123"})
+local v486 = v466:MakeTab({"Auto Fishing","rbxassetid://116777271888123"})
+local v487 = v466:MakeTab({"Quest | Items","rbxassetid://116777271888123"})
+local v488 = v466:MakeTab({"Volcano Dojo","rbxassetid://116777271888123"})
+local v489 = v466:MakeTab({"Sea Event","rbxassetid://116777271888123"})
+local v490 = v466:MakeTab({"Race V4","rbxassetid://116777271888123"})
+local v491 = v466:MakeTab({"Raid Fruits","rbxassetid://116777271888123"})
+local v492 = v466:MakeTab({"Fruits | Check Stock","rbxassetid://116777271888123"})
+local v493 = v466:MakeTab({"Teleport","rbxassetid://116777271888123"})
+local v494 = v466:MakeTab({"PvP,Player","rbxassetid://116777271888123"})
+local v495 = v466:MakeTab({"Shop","rbxassetid://116777271888123"})
+local v496 = v466:MakeTab({"Settings","rbxassetid://116777271888123"})
 v484:AddDiscordInvite({
     Name = "Tham Gia Discord",
     Description = "Link Sever Discord",
-    Logo = "rbxassetid://116828114235759",
+    Logo = "rbxassetid://116777271888123",
     Invite = " https://discord.gg/DKbu5RY67F"
 })
 local _ = v485:AddSection({"Select Melee,Sword,Gun,Fruit"})
