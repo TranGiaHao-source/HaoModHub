@@ -3729,13 +3729,13 @@ function CheckItemBPCRBPCR(v463)
 end
 local vu32 = loadstring(game:HttpGet("https://pastefy.app/5bk02Q6b/raw"))();
 local v466 = vu32:MakeWindow({
-    Title = "Night Slayer Hub [V7]",
-    SubTitle = "By Real_NightSlayer☑️",
-    SaveFolder = "NightSlayerOnTop | redz lib v5.lua"
+    Title = "⚡HAO MOD HUB v1.0⚡",
+    SubTitle = "【By 👑HaoMod👑】",
+    SaveFolder = "HaoModHub Vip | redz lib v5.lua"
 })
 
 v466:AddMinimizeButton({
-    Button = { Image = "rbxassetid://96779554580445", BackgroundTransparency = 1},
+    Button = { Image = "", BackgroundTransparency = 1},
     Size = UDim2.new(0, 40, 0, 40),
     Corner = { CornerRadius = UDim.new(0.5, 0) },
 })
@@ -3754,27 +3754,12 @@ local v495 = v466:MakeTab({"Shop", "shoppingCart"})
 local v496 = v466:MakeTab({"Misc", "settings"})
 
 v484:AddDiscordInvite({
-    Name = "Night Slayer | Official Sever",
-    Description = "Vào Để Nhận Thông Báo Sớm Nhất Nhé",
-    Logo = "rbxassetid://96779554580445",
-    Invite = "https://discord.gg/wWHxH6ARU"
+    Name = "Hao Mod Hub | Comunity",
+    Description = "Vào Để Nhận Được Các Thông Báo Sớm Nhất Về Script Nhé!",
+    Logo = "rbxassetid://116777271888123",
+    Invite = "https://discord.gg/DKbu5RY67F"
 })
-v484:AddParagraph({
-Title = "Giao lưu vui vẻ",
-    Desc = "Không Toxic Chửi Nhau"
-})
-v484:AddParagraph({
-Title = "Version: V7",
-    Desc = ""
-})
-v484:AddParagraph({
-Title = "Freeium Version",
-    Desc = ""
-})
-v484:AddParagraph({
-Title = "Premium Version: Comming Soon",
-    Desc = ""
-})
+
 _G.SelectWeapon = "Melee"
 task.spawn(function()
     while task.wait() do
