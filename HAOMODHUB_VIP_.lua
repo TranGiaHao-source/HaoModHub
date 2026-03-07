@@ -3680,11 +3680,6 @@ end
 local v466
 local ui_loaded = false
 
--- Thử load UI từ nhiều nguồn khác nhau
-local ui_urls = {
-    "https://raw.githubusercontent.com/TranGiaHao-source/HaoModHub/refs/heads/main/raw.txt"
-}
-
 for i, url in ipairs(ui_urls) do
     local success, result = pcall(function()
         return loadstring(game:HttpGet(url))()
