@@ -3694,13 +3694,39 @@ for i, url in ipairs(ui_urls) do
             Title = "⚡HAO MOD HUB⚡",
             SubTitle = "【By 👑HaoMod👑】",
             SaveFolder = "Redz | redz lib v5.lua",
-        ui_loaded = true
+        Theme = {
+                Accent = Color3.fromRGB(0, 191, 255),
+                Background = Color3.fromRGB(15, 15, 25),
+                SecondaryBackground = Color3.fromRGB(20, 20, 35),
+                Text = Color3.fromRGB(255, 255, 255),
+                PlaceholderText = Color3.fromRGB(120, 120, 140),
+                ButtonText = Color3.fromRGB(255, 255, 255),
+                Shadow = Color3.fromRGB(0, 0, 0)
+            }
+        })
+         ui_loaded = true
         print("✅ UI loaded from URL " .. i)
         break
     else
         warn("⚠️ Failed to load from URL " .. i .. ": " .. tostring(result))
     end
 end
+    -- Nếu không load được, tạo UI backup đơn giản
+if not ui_loaded then
+    warn("❌ Không thể load UI library! Tạo UI backup...")
+    
+    -- Tạo notification
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "⚠️ HAO MOD HUB - Lỗi!";
+        Text = "Không thể load UI!\nKRNL có thể không hỗ trợ HttpGet.\nThử executor khác!";
+        Duration = 10;
+    })
+    
+    -- Tạo UI đơn giản thay thế
+    local sg = Instance.new("ScreenGui")
+    sg.Name = "HaoModBackupUI"
+    sg.Parent = game:GetService("CoreGui")
+    sg.ResetOnSpawn = false
     
     local main = Instance.new("Frame")
     main.Name = "MainFrame"
